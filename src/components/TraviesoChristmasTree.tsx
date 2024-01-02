@@ -14,9 +14,19 @@ const TraviesoChristmasTree: React.FC = () => {
   });
 
   const moveTree = () => {
+    const generatePosition = (currentPosition: number): number => {
+      let newPosition;
+      do {
+        newPosition = Math.random() * 100;
+      } while (
+        newPosition >= currentPosition - 15 &&
+        newPosition <= currentPosition + 15
+      );
+      return newPosition;
+    };
     const newPosition = {
-      left: Math.random() * 100,
-      top: Math.random() * 100,
+      left: generatePosition(position.left),
+      top: generatePosition(position.top),
     };
     setPosition(newPosition);
   };
