@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Travieso Christmas Tree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a fun and festive web application featuring an interactive Christmas tree. The tree "dodges" when you try to hover over it by moving to a random position on the screen. After the user attempts to interact with the tree 10 times, a click event is enabled that plays a surprise video on YouTube.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Mouse Dodge**: The Christmas tree randomly changes position on the screen when the mouse hovers over it.
+- **Interaction Counter**: A counter tracks the number of times the user has attempted to interact with the tree.
+- **Christmas Surprise**: On the tenth attempt, if the user clicks the tree, they are redirected to a surprise video on YouTube.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- CSS Animations
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+To run this project on your local machine, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone
+cd travieso-christmas-tree
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Install the dependencies:
+
+```
+npm install
+```
+
+3. Start the application:
+
+```
+npm start
+```
+
+The application should now be running on `http://localhost:5173/`.
+
+## Usage
+
+Simply move your mouse over the Christmas tree and watch it move. After the tenth attempt, click on the tree to uncover the Christmas surprise.
